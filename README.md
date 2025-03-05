@@ -21,29 +21,39 @@ pip install -r requirements.txt
 ## Usage
 Run different stress tests by choosing the appropriate script:
 
-### CPU Load Test
+### 1. Simple Sleep (Minimal Load)
 ```bash
-python cpu_stress.py --iterations 1000000
+python simple_sleep.py --seconds 100
 ```
 
-### Memory Load Test
+### 2. Simple CPU Load (Infinite Loop)
 ```bash
-python memory_stress.py --size 5000000
+python simple_cpu.py --seconds 10000
 ```
 
-### Disk I/O Load Test
+### 3. Moderate CPU Load (Factorial Calculation)
 ```bash
-python disk_stress.py --filename "output.txt" --lines 500000
+python moderate_cpu.py --num 50000
 ```
 
-### Network Load Test
+### 4. Heavy CPU Load (Multithreaded Prime Calculation)
 ```bash
-python network_stress.py --url "https://www.example.com"
+python heavy_cpu.py --size 500000
 ```
 
-### Database Load Test
+### 5. Memory Load (Large List Allocation)
 ```bash
-python db_stress.py --dbname test --user username --password secret --table test_table
+python memory_load.py --size 5000
+```
+
+### 6. High Disk I/O Load (File Write Loop)
+```bash
+python high_disk_io.py --filename "output.txt" --lines 500000
+```
+
+### 7. High Network Load (HTTP Requests)
+```bash
+python http_request.py --url "https://www.example.com" --delay 2 --count 300
 ```
 
 ## Contributing
