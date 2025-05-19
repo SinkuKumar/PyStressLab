@@ -13,7 +13,7 @@ PyStressLab is a powerful and flexible Python-based toolkit designed to stress t
 PyStressLab requires Python 3.6 or later. Clone the repository and install necessary dependencies:
 
 ```bash
-git clone https://github.com/yourusername/PyStressLab.git
+git clone https://github.com/SinkuKumar/PyStressLab.git
 cd PyStressLab
 pip install -r requirements.txt
 ```
